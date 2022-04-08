@@ -1,9 +1,15 @@
+import path from 'path';
 import { defineConfig } from 'vite';
 import Vue from '@vitejs/plugin-vue';
-import Unocss from 'unocss/vite';
+import WindiCSS from 'vite-plugin-windicss';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@': `${path.resolve(__dirname, 'src')}`
+    }
+  },
   plugins: [
     /**
      * 启用响应性语法糖
@@ -11,10 +17,9 @@ export default defineConfig({
      */
     Vue({ reactivityTransform: true }),
     /**
-     * 原子化CSS
-     * see more: https://github.com/antfu/unocss
-     * see unocss.config.ts for config
+     * see more: https://cn.windicss.org/
+     * see windi.config.ts for config
      */
-    Unocss()
+    WindiCSS()
   ]
 });

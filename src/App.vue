@@ -1,21 +1,20 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue';
+import Header from '@/components/Header/index.vue';
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-</template>
+  <main class="px-20px py-30px flex flex-col items-center font-sans font-thin">
+    <Header />
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+    <p class="mt-25px text-xl">
+      Vue Vite Starter
+    </p>
+    <p class="mt-10px text-sm text-gray-400 italic">
+      A Vue 3.x + Vite 2.x + TypeScript + WindiCSS template starter 🚀
+    </p>
+
+    <button class="mt-20px text-sm btn btn-blue font-thin">
+      Jump
+    </button>
+  </main>
+</template>
