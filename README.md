@@ -7,7 +7,7 @@ A Vue 3.x + Vite 2.x + TypeScript + WindiCSS template starter 🚀
 
 ## Preview
 
-https://ryanpromax.github.io/vue-vite-starter/
+https://vue-vite-starter.netlify.app/
 
 
 ## Features
