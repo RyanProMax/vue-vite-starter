@@ -1,7 +1,10 @@
 import { defineConfig } from 'windicss/helpers';
 import colors from 'windicss/colors';
-import plugin from 'windicss/plugin';
 
+/**
+ * 英文文档：https://windicss.org/
+ * 中文文档: https://cn.windicss.org/
+ */
 export default defineConfig({
   darkMode: 'class',
   attributify: {
@@ -24,26 +27,8 @@ export default defineConfig({
       }
     }
   },
-  plugins: [
-    plugin(({ addComponents }) => addComponents({
-      '.btn': {
-        padding: '.25rem 1rem',
-        borderRadius: '.25rem'
-      },
-      '.btn-blue': {
-        'backgroundColor': '#3490dc',
-        'color': '#fff',
-        '&:hover': {
-          backgroundColor: '#2779bd'
-        }
-      },
-      '.btn-red': {
-        'backgroundColor': '#e3342f',
-        'color': '#fff',
-        '&:hover': {
-          backgroundColor: '#cc1f1a'
-        }
-      }
-    }))
-  ]
+  shortcuts: {
+    'btn': 'py-1 px-4 font-sans font-thin rounded transition duration-250',
+    'btn-red': 'text-white bg-red-500 hover:bg-red-700'
+  }
 });
