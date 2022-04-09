@@ -7,21 +7,23 @@ import { compileTemplate } from 'vue/compiler-sfc';
  * 将svg编译成vue组件
  * see more: https://github.com/jpkleemans/vite-svg-loader
  */
-export const SvgLoader: Plugin = () => ({
-  name: 'svg-loader',
-  enforce: 'pre',
+export function SvgLoader(): Plugin {
+  return {
+    name: 'svg-loader',
+    enforce: 'pre',
 
-  load(file: string) {
-    if (!file.match(/\.svg$/))
-      return;
-    const svg = fs.readFileSync(file, 'utf-8');
+    load(file: string) {
+      if (!file.match(/\.svg$/))
+        return;
+      const svg = fs.readFileSync(file, 'utf-8');
 
-    const { code } = compileTemplate({
-      id: file,
-      source: svg,
-      filename: file,
-      transformAssetUrls: false
-    });
-    return `${code}\nexport default { render }`;
-  }
-});
+      const { code } = compileTemplate({
+        id: file,
+        source: svg,
+        filename: file,
+        transformAssetUrls: false
+      });
+      return `${code}\nexport default { render }`;
+    }
+  };
+}
