@@ -1,8 +1,18 @@
-# Vue-Vite-Starter
+<h1 align='center' style="font-weight: 100">
+  Vue-Vite-Starter
+</h1>
 
-A Vue 3.x + Vite 2.x + TypeScript + WindiCSS template starter 🚀
+<p align='center'>
+  <img src="https://raw.githubusercontent.com/RyanProMax/vue-vite-starter/main/public/favicon.ico" width="100" alt="Vue-Vite-Starter" />
+</p>
 
-一个极简的快速启动模板 💪
+<p align='center' style="font-weight: 100">
+  A Vue 3.x + Vite 2.x + TypeScript + WindiCSS template starter 🚀
+</p>
+
+<p align='center' style="font-weight: 100">
+  一个极简的快速启动模板 💪
+</p>
 
 
 ## Preview
