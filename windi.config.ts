@@ -4,6 +4,9 @@ import plugin from 'windicss/plugin';
 
 export default defineConfig({
   darkMode: 'class',
+  attributify: {
+    prefix: 'w:'
+  },
   theme: {
     extend: {
       screens: {

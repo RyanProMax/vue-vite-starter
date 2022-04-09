@@ -2,6 +2,7 @@ import path from 'path';
 import { defineConfig } from 'vite';
 import Vue from '@vitejs/plugin-vue';
 import WindiCSS from 'vite-plugin-windicss';
+import { SvgLoader } from './src/utils/plugins';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -20,6 +21,7 @@ export default defineConfig({
      * see more: https://cn.windicss.org/
      * see windi.config.ts for config
      */
-    WindiCSS()
+    WindiCSS(),
+    SvgLoader()
   ]
 });
