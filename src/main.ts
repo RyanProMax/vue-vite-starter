@@ -10,6 +10,6 @@ import 'virtual:windi.css';
 const app = createApp(App);
 
 // router
-app.use(createRouter(createWebHistory()));
+app.use(createRouter(createWebHistory('/vue-vite-starter/')));
 
 app.mount('#app');
