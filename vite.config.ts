@@ -6,6 +6,8 @@ import { SvgLoader } from './src/utils/plugins';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // 按需设置，此处为部署到gh-pages
+  base: '/vue-vite-starter/',
   resolve: {
     alias: {
       '@': `${path.resolve(__dirname, 'src')}`
