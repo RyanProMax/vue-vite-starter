@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/RyanProMax/vue-vite-starter/compare/1.0.0...1.1.0) (2022-04-10)
+
+### Features
+
+- 引入 vite-plugin-pages 进行路由管理
+
+
+### Fix
+
+- 修复 netlify 部署后，刷新 404 的问题
+
+
 # 1.0.0 (2022-04-09)
 
 ### Features

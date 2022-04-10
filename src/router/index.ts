@@ -1,17 +1,9 @@
-import type { RouterHistory } from 'vue-router';
-import { createRouter } from 'vue-router';
-import Home from '@/pages/home.vue';
-import Hi from '@/pages/hi.vue';
+import { createRouter, createWebHistory } from 'vue-router';
+import routes from '~pages';
 
-const routes = [
-  { path: '/', redirect: '/home' },
-  { path: '/home', component: Home },
-  { path: '/hi/:name', component: Hi }
-];
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes
+});
 
-export default function(history: RouterHistory) {
-  return createRouter({
-    history,
-    routes
-  });
-}
+export default router;
