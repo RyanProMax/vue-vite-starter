@@ -36,3 +36,31 @@ npx degit RyanProMax/vue-vite-starter my-vue-app
 cd my-vue-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
+
+### Svg Icon
+
+```vue
+<script setup lang="ts">
+import SvgIcon from '~/components/SvgIcon/index.vue';
+</script>
+
+<template>
+  <SvgIcon name="joker" />
+</template>
+```
+
+相当于使用
+
+```vue
+<script setup lang="ts">
+import Joker from '~/assets/svg/joker.svg';
+</script>
+
+<template>
+  <Joker />
+</template>
+```
+
+> 注意：
+>
+> 使用 SvgIcon 方式属于动态引入，如果配合动态语法定义`name`，会存在加载时间，导致切换不流畅。

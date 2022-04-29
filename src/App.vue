@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import SvgIcon from './components/SvgIcon/index.vue';
-import Header from '@/components/Header/index.vue';
+import SvgIcon from '~/components/SvgIcon/index.vue';
+import Header from '~/components/Header/index.vue';
 </script>
 
 <template>
