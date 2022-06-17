@@ -7,14 +7,32 @@ const { name } = route.params;
 </script>
 
 <template>
-  <p w:m="t-25px" w:text="xl center">
+  <p class="hi-title">
     Welcome
   </p>
-  <p w:m="t-10px" w:text="gray-400 center">
+  <p class="hi-sub-title">
     {{ name }}
   </p>
 
-  <button w:m="t-20px" class="btn btn-red" @click="router.back()">
+  <el-button class="hi-button" type="primary" @click="router.back()">
     back
-  </button>
+  </el-button>
 </template>
+
+<style lang="scss">
+.hi {
+  &-title {
+    margin-top: 25px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  &-sub-title {
+    margin-top: 10px;
+  }
+
+  &-button {
+    margin-top: 20px;
+  }
+}
+</style>

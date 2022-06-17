@@ -7,7 +7,7 @@
 </p>
 
 <p align='center'>
-  A Vue 3.x + Vite 2.x + TypeScript + WindiCSS template starter 🚀
+  A Vue 3.x + Vite 2.x + TypeScript + Element-Plus + Sass template starter 🚀
 </p>
 
 <p align='center'>
@@ -24,9 +24,11 @@ https://vue-vite-starter.netlify.app/
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite), [TypeScript](https://www.typescriptlang.org/), [Vue-Router](https://router.vuejs.org/zh/), [pnpm](https://pnpm.js.org/), [ESBuild](https://github.com/evanw/esbuild)
 
-- 🎨 [WindiCSS](https://windicss.org/): 下一代工具类 CSS 框架
+- 🎨 [Sass](https://www.sass.hk/)
 
-- 😃 Svg Icon: 封装组件导入 Svg 原生表情，轻松管理你的图标库
+- 🌼 [Element-Plus](https://element-plus.gitee.io/zh-CN/)
+
+- 😃 [自定义svg-loader]: 轻松管理你的图标库
 
 
 ## Usage
@@ -36,31 +38,3 @@ npx degit RyanProMax/vue-vite-starter my-vue-app
 cd my-vue-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
-
-### Svg Icon
-
-```vue
-<script setup lang="ts">
-import SvgIcon from '~/components/SvgIcon/index.vue';
-</script>
-
-<template>
-  <SvgIcon name="joker" />
-</template>
-```
-
-相当于使用
-
-```vue
-<script setup lang="ts">
-import Joker from '~/assets/svg/joker.svg';
-</script>
-
-<template>
-  <Joker />
-</template>
-```
-
-> 注意：
->
-> 使用 SvgIcon 方式属于动态引入，如果配合动态语法定义`name`，会存在加载时间，导致切换不流畅。

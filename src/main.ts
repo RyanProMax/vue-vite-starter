@@ -3,8 +3,7 @@ import App from './App.vue';
 import router from '~/router';
 
 // global style
-import './styles/index.css';
-import 'virtual:windi.css';
+import './styles/index.scss';
 
 const app = createApp(App);
 

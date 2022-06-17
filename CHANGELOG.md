@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/RyanProMax/vue-vite-starter/compare/1.1.0...1.2.0) (2022-06-17)
+
+### Features
+
+- 新增 Element-Plus, 自动引入及按需引入插件
+
+- 新增 Sass
+
+- 移除 WindiCSS
+
+- 移除 SvgIcon 组件
+
+
 # [1.1.0](https://github.com/RyanProMax/vue-vite-starter/compare/1.0.0...1.1.0) (2022-04-10)
 
 ### Features

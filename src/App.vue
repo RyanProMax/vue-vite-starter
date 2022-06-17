@@ -1,12 +1,27 @@
 <script setup lang="ts">
-import SvgIcon from '~/components/SvgIcon/index.vue';
-import Header from '~/components/Header/index.vue';
+import Header from '~/components/Header.vue';
+import Joker from '~/assets/svg/joker.svg';
 </script>
 
 <template>
-  <main w:p="x-20px y-30px" w:flex="~ col" w:align="items-center" w:font="sans thin" w:text="dark:gray-300">
+  <main class="main">
     <Header />
-    <SvgIcon name="joker" w:m="t-30px" w:w="80px" w:h="80px" w:fill="red-500" />
+    <Joker class="logo" />
     <router-view />
   </main>
 </template>
+
+<style lang="scss">
+.main {
+  padding: 30px 20px;
+  @include flex($direction: column);
+  color: var(--el-text-color-primary);
+
+  .logo {
+    margin-top: 30px;
+    width: 80px;
+    height: 80px;
+    fill: var(--el-color-primary);
+  }
+}
+</style>
