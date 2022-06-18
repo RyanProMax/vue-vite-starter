@@ -13,7 +13,7 @@ const handleNavigate = () => name.value.trim() && router.push(`/hi/${name.value}
     Vue Vite Starter
   </p>
   <p class="home-sub-title" w:font="italic">
-    A Vue 3.x + Vite 2.x + TypeScript + WindiCSS template starter 🚀
+    A Vue 3.x + Vite 2.x + Element-Plus + TypeScript + Sass template starter 🚀
   </p>
   <p class="home-sub-title" w:font="italic">
     一个极简的快速启动模板 💪

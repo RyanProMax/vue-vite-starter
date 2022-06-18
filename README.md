@@ -7,7 +7,7 @@
 </p>
 
 <p align='center'>
-  A Vue 3.x + Vite 2.x + TypeScript + Element-Plus + Sass template starter 🚀
+  A Vue 3.x + Vite 2.x + Element-Plus + TypeScript + Sass template starter 🚀
 </p>
 
 <p align='center'>
